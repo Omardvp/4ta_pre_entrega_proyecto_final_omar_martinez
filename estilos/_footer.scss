@@ -1,0 +1,52 @@
+.pie {
+    background-color: rgb(88, 76, 76);
+    color: $colorCuarto;
+    i {
+        font-size: 25px;
+        }
+    p {
+        text-align: center;
+        padding: 12px 0;
+        font-size: 12px;
+        background-color: rgb(56, 49, 49);
+    }
+
+    .footer-content{
+        padding: 20px 0;
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width:992px) {
+            justify-content: space-evenly;
+        }
+        @media (max-width:552px) {
+            flex-direction: column;
+            align-items: center;
+        }
+        .footer-info{
+            font-size: 14px;
+
+            li:first-of-type {
+                margin-bottom: 10px;
+            }
+        }
+    .footer-redes {
+        display: flex;
+        li { &:first-of-type {
+            margin-right: 20px;
+            i {
+                color: #3b5998;
+                font-size: 30px;
+            }    
+            }
+            &:last-of-type {
+                i {
+                    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+    }
+
+}

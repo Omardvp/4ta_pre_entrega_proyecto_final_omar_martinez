@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// Variables
+$tituloPrincipal: 'Krona One'; 
+$titulos: 'Oswald';
+$texto: 'Quicksand';
+$slogan: 'Contrail One';
+$colorPricipal: black;
+$colorSecundario: lightgray;
+$colorTercero: orange;
+$colorCuarto: white;
+$colorQuinto: whitesmoke;
+
+h1 {
+    font-family: $tituloPrincipal ;
+    color: $colorPricipal;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: $titulos;
+    color: $colorPricipal;
+}
+p {
+    font-family: $texto;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 700;
+    color: $colorPricipal;
+    font-size: 20px;
+    font-family: 'Oswald';
+    text-transform: uppercase;
+    &:hover{
+        transition: .4s ease-out;
+        font-size: 25px;
+        color: orange !important;
+    }
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+li {
+    list-style: none;
+    font-family: $texto;
+}
+
+.t-h2 {
+    text-align: center;
+    color: $colorPricipal;
+    margin-bottom: 20px;
+    }

@@ -1,0 +1,32 @@
+article {
+    h2 {
+        text-align: center;
+    }
+    div {
+        margin: 25px 10px;
+    }
+}
+
+.galeria {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    @media (max-width:992px) {
+        flex-wrap: wrap;
+    }
+    @media (max-width:552px) {
+        flex-direction: column;
+    }
+   
+}
+
+.fh {
+    height: 600px;
+    width: 100%;
+    background-image: url(../img/hernan_barro.png);
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    border-radius: 10px;
+}
